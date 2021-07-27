@@ -1,5 +1,5 @@
 // timers
-const poTimer = 0.3;
+const poTimer = 30;
 const sbTimer = 5;
 const lbTimer = 30;
 // buttons header
