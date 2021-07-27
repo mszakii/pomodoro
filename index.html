@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--links-->
+  <link rel="stylesheet" href="master.css" />
+  <!--title-->
+  <title>pomodoro</title>
+  <link rel="shortcut icon" href="pomodoro.svg" />
+</head>
+<body>
+  <div class="container">
+  <!--header-->
+    <header>
+      
+      <!--left-->
+      <div class="left">
+        <img src="pomodoro.svg" />
+        <h1>Pomodoro</h1>
+      </div>
+      
+      <!--right-->
+      <div class="right">
+        <div class="box"></div>
+      </div>
+    </header>
+    
+    <!--section-->
+    <section>
+      
+      <!--section header-->
+      <div class="header">
+        <button class="btn active" id="btn1">Pomodoro</button>
+        <button class="btn" id="btn2">short break</button>
+        <button class="btn" id="btn3">long break</button>
+      </div>
+      
+      <!--timer-->
+      <div class="timer" id="timer">30:00</div>
+      <div class="button btn-start" id="btnStart" onclick="startTimer">start</div>
+      <div class="button btn-start" id="btnStop" onclick="startTimer">stop</div>
+      
+    </section>
+    
+    <div class="quote">Time work!</div>
+    
+    <audio src="click.wav" id="audio1"></audio>
+    
+    <audio src="finished.mp3" id="audio2"></audio>
+    
+  </div>
+<!--JavaScript-->
+<script src="main.js"></script>
+</body>
+</html>
