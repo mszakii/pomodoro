@@ -16,9 +16,28 @@ let body = document.querySelector("body");
 let quote = document.querySelector(".quote");
 let alarm = document.querySelector("audio#audio2");
 let roundEl = document.querySelector(".round");
+let pomos = document.querySelector(".pomos");
 // round
 let round = 0;
-let pomos = 0;
+let pomosTime = 0;
+// check if item exists in localStorage
+if (localStorage.getItem("data")) {
+  var data = localStorage.getItem("data");
+  data = JSON.parse(data);
+
+  round = data.round;
+  pomosTime = data.pomosTime;
+
+  roundEl.innerHTML = round;
+  pomos.innerHTML = pomosTime;
+} else {
+  var data = {
+    "round": round,
+    "pomosTime": pomosTime
+  };
+
+  localStorage.setItem("data", JSON.stringify(data));
+}
 // quotes
 
 let array = [
@@ -33,6 +52,21 @@ let i = Math.floor(Math.random() * array.length);
 quote.innerHTML = array[i];
 
 // functions
+
+function update_data(type, value) {
+
+  var data = localStorage.getItem("data");
+  data = JSON.parse(data);
+
+  if (type == "round") {
+    data.round = value;
+    localStorage.setItem("data", JSON.stringify(data));
+  } else if (type == "pomosTime") {
+    data.pomosTime = value;
+    localStorage.setItem("data", JSON.stringify(data));
+  }
+}
+
 pomodoro.onclick = function() {
 
   if (pomodoro.classList.contains("active")) {
@@ -149,8 +183,10 @@ start.onclick = function startTimer() {
             stop.style.display = "none";
           }, 501);
           round++;
+          update_data("round", round);
           roundEl.innerHTML = round;
           pomosTime = Math.round(poTimer * round);
+          update_data("pomosTime", pomosTime);
           pomos.innerHTML = pomosTime;
         if (round === 4 || round === 8 || round === 12 || round === 16) {
           longBreak.classList.add("active");
