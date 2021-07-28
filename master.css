@@ -149,7 +149,8 @@ section .btn-start:hover {
   }
 }
 
-.quote {
+.quote,
+.round {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
