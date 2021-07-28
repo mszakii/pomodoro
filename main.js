@@ -1,7 +1,7 @@
 // timers
-const poTimer = 30;
+const poTimer = 25;
 const sbTimer = 5;
-const lbTimer = 30;
+const lbTimer = 15;
 // buttons header
 let pomodoro = document.getElementById("btn1");
 let shortBreak = document.getElementById("btn2");
@@ -15,6 +15,9 @@ let section = document.querySelector("section");
 let body = document.querySelector("body");
 let quote = document.querySelector(".quote");
 let alarm = document.querySelector("audio#audio2");
+let roundEl = document.querySelector(".round");
+// round
+let round = 0;
 
 // quotes
 
@@ -137,20 +140,32 @@ start.onclick = function startTimer() {
         time -= 1;
       } else {
           pomodoro.classList.remove("active");
-          shortBreak.classList.add("active");
-          body.style.backgroundColor = "var(--short-break)";
-          start.style.color = "var(--short-break)";
-          stop.style.color = "var(--short-break)";
-          section.style.backgroundColor = "var(--sb)";
           clearInterval(interval);
           alarm.play();
-          timer.innerHTML = "05:00";
           setTimeout(function() {
             start.style.display = "block";
           }, 500);
           setTimeout(function() {
             stop.style.display = "none";
           }, 501);
+          round++;
+          roundEl.innerHTML = round;
+          
+        if (round === 4 || round === 8 || round === 12 || round === 16) {
+          longBreak.classList.add("active");
+          body.style.backgroundColor = "var(--long-break)";
+          start.style.color = "var(--long-break)";
+          stop.style.color = "var(--long-break)";
+          section.style.backgroundColor = "var(--lb)";
+          timer.innerHTML = "15:00";
+        } else {
+          shortBreak.classList.add("active");
+          body.style.backgroundColor = "var(--short-break)";
+          start.style.color = "var(--short-break)";
+          stop.style.color = "var(--short-break)";
+          section.style.backgroundColor = "var(--sb)";
+          timer.innerHTML = "05:00";
+        }
       }
     }, 1000);
   } else if (shortBreak.classList.contains("active")) {
