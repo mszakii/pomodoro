@@ -18,7 +18,7 @@ let alarm = document.querySelector("audio#audio2");
 let roundEl = document.querySelector(".round");
 // round
 let round = 0;
-
+let pomos = 0;
 // quotes
 
 let array = [
@@ -150,7 +150,8 @@ start.onclick = function startTimer() {
           }, 501);
           round++;
           roundEl.innerHTML = round;
-          
+          pomosTime = Math.round(poTimer * round);
+          pomos.innerHTML = pomosTime;
         if (round === 4 || round === 8 || round === 12 || round === 16) {
           longBreak.classList.add("active");
           body.style.backgroundColor = "var(--long-break)";
