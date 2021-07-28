@@ -197,7 +197,7 @@ start.onclick = function startTimer() {
             stop.style.color = "var(--pomodoro)";
             section.style.backgroundColor = "var(--po)";
             clearInterval(interval);
-            timer.innerHTML = "30:00";
+            timer.innerHTML = "25:00";
             alarm.play();
             setTimeout(function() {
               start.style.display = "block";
@@ -266,7 +266,6 @@ stop.onclick = function stopTimer() {
 // problems
 
 /*
-  // stack over flow or google
   - record pomodoros
       -- after 4 pomodors long break
   // i can do it
