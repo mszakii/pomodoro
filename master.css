@@ -149,16 +149,28 @@ section .btn-start:hover {
   }
 }
 
-.quote,
-.round {
+.quote {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
 }
 
-.round {
-  font-size: 1.5rem;
-  font-weight: bold;
+.calc {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+}
+
+.calc .text {
+  margin-right: 2.5px;
+  text-transform: uppercase;
+}
+
+.calc .in {
+  display: flex;
+  margin: 0 10px;
 }
 
 /*set container*/
