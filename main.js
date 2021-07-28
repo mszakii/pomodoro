@@ -52,7 +52,7 @@ pomodoro.onclick = function() {
       stop.style.display = "none";
     }, 501);
     quote.innerHTML = array[i];
-    timer.innerHTML = "30:00";
+    timer.innerHTML = "25:00";
   }
 
 }
@@ -99,7 +99,7 @@ longBreak.onclick = function() {
     setTimeout(function() {
       stop.style.display = "none";
     }, 501);
-    timer.innerHTML = "30:00";
+    timer.innerHTML = "15:00";
     quote.innerHTML = "You deserve that 🤩"
   }
 
@@ -235,7 +235,7 @@ start.onclick = function startTimer() {
             stop.style.color = "var(--pomodoro)";
             section.style.backgroundColor = "var(--po)";
             clearInterval(interval);
-            timer.innerHTML = "30:00";
+            timer.innerHTML = "25:00";
             alarm.play();
             
             setTimeout(function() {
