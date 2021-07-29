@@ -21,7 +21,7 @@
 body {
   background-color: var(--pomodoro);
   font-size: 18px;
-  font-family: Arial,Sans-Serif;
+  font-family: comic sans ms, Arial,Sans-Serif;
   color: white;
   transition: 0.5s;
 }
