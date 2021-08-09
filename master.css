@@ -61,14 +61,15 @@ header::before {
   width: 35px;
   margin-right: 10px;
   pointer-events: none;
+  box-shadow: -2px 2px var(--active);
 }
 
-.right .box {
+/* .right .box {
   width: 35px;
   height: 35px;
   background: var(--active);
   border-radius: 5px;
-}
+}*/
 
 section {
   width: 90%;
