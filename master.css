@@ -23,7 +23,7 @@
 body {
   background-color: var(--pomodoro);
   font-size: 18px;
-  font-family: 'itim', Arial,Sans-Serif;
+  font-family: 'Itim', Arial,Sans-Serif;
   color: white;
   transition: 0.5s;
 }
