@@ -188,7 +188,7 @@ start.onclick = function startTimer() {
           pomosTime = Math.round(poTimer * round);
           update_data("pomosTime", pomosTime);
           pomos.innerHTML = pomosTime;
-        if (round === 4 || round === 8 || round === 12 || round === 16) {
+        if (round % 4 === 0) {
           longBreak.classList.add("active");
           body.style.backgroundColor = "var(--long-break)";
           start.style.color = "var(--long-break)";
