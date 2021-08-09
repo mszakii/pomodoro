@@ -11,5 +11,11 @@ You can use the app for free 🤩
 
 app link »» [pomodoro](https://mohammed-zaky.github.io/pomodoro)
 
+## what's new 🤩
+- Fix some bugs
+- New logo
+- Update font
+- save Rounds & Time in your browser
+
 ## version
-1.0.1 stable
+1.0.5 stable
