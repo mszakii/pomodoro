@@ -12,4 +12,4 @@ You can use the app for free 🤩
 app link »» [pomodoro](https://mohammed-zaky.github.io/pomodoro)
 
 ## version
-0.9.1 beta
+1.0.1 stable
