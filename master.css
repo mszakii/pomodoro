@@ -61,7 +61,6 @@ header::before {
   width: 35px;
   margin-right: 10px;
   pointer-events: none;
-  box-shadow: -2px 2px #000000aa;
 }
 
 /* .right .box {
