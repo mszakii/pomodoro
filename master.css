@@ -107,7 +107,7 @@ section .header button.active {
 }
 
 section .timer {
-  font-size: 6rem;
+  font-size: 7rem;
   padding: 10px;
   margin: 10px auto;
   width: fit-content;
