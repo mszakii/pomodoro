@@ -18,6 +18,11 @@
   user-select: none;
 }
 
+@font-face {
+  font-family: 'comic sans ms';
+  src: url("COMIC.TTF");
+}
+
 body {
   background-color: var(--pomodoro);
   font-size: 18px;
