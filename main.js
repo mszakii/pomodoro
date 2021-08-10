@@ -299,6 +299,13 @@ stop.onclick = function stopTimer() {
   
   clearInterval(interval);
 }
+
+// pwa
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
+
 // problems
 
 /*
