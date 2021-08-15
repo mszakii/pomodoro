@@ -175,6 +175,14 @@ section .btn-start:hover {
   margin: 0 10px;
 }
 
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pomodoro: #1E2329;
+    --po: #2B2F38;
+  }
+}
+
 /*set container*/
 .container{
   padding-left: 2.5px;
