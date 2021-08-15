@@ -16,6 +16,8 @@ app link »» [pomodoro](https://mohammed-zaky.github.io/pomodoro)
 - New logo
 - Update font
 - save Rounds & Time in your browser
+- dark theme mode 🌚 🤩
+- fix transition bugs
 
 ## version
-1.0.5 stable
+1.1.0 stable
