@@ -180,6 +180,10 @@ section .btn-start:hover {
   :root {
     --pomodoro: #1E2329;
     --po: #2B2F38;
+    --short-break: #1E4C5B;
+    --sb: hsl(194.8,50.4%,30.7%);
+    --long-break: #007A7D;
+    --lb: hsl(181.4,100%,30.5%);
   }
 }
 
